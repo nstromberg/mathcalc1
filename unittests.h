@@ -8,7 +8,7 @@ class unitTests : public QWidget
 {
     Q_OBJECT
 public:
-    unitTests(QWidget *parent = nullptr, int numTests = 0, int passedTests = 0);
+    unitTests(QWidget *parent = nullptr, int numTests = 0, int passedTests = 0,  float epsilon = 0.01f);
     int runAll();
     int calculateFormulas();
     void testWeightDistributions();
