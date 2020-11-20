@@ -29,6 +29,7 @@ private:
     QString weightFrontWheelsRearRaised;
     int numTests;
     int passedTests;
+    float epsilon;
 
 private:
     Formulas formulas;
