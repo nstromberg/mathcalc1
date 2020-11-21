@@ -1,0 +1,2 @@
+# mathcalc1
+This repository contains the code for the Delta V Math Calculations Application. All documentation made during development is in the Documentation folder. Note that the links to Confluence pages in the documentation may no longer work. These Confluence pages have been moved to the Documentation folder of this repository. New developers should begin by reading the System Specification in the Documentation folder.
