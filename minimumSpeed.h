@@ -21,7 +21,7 @@ private:
 #endif // MINIMUMSPEED_H
 
 
-/** this code will allow you to open a new tab for the min speed when the user selects the formula
+/** this code will allow you to open a new window for the min speed when the user selects the formula
 
 #ifndef MINIMUMSPEED_H
 #define MINIMUMSPEED_H
