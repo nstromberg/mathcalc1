@@ -2,7 +2,7 @@
 #define CENTEROFMASSSOLUTIONS_H
 
 #include <QWidget>
-#include <ui_centerofmasssolutions.h>
+#include <ui_centerOfMassSolutions.h>
 QT_BEGIN_NAMESPACE
 namespace Ui { class centerofmasssolutions; }
 QT_END_NAMESPACE
