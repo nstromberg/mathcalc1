@@ -47,6 +47,12 @@ FORMS += \
     minimumSpeed.ui \
     vehicleweights.ui
 
+# Specify build directory
+DESTDIR = build
+OBJECTS_DIR = build
+MOC_DIR = build
+UI_DIR = build
+
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin

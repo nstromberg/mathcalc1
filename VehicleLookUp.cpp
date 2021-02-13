@@ -223,7 +223,7 @@ void VehicleLookUp::on_pushButton_clicked()
         //Get all data for selected year/make/model/trim from database
     QString getVehicleData = "SELECT * FROM VEHICLE_SPECS_merge WHERE model_year = " + year + " AND model_make_id = '" + make + "' AND model_name = '" + model + "' AND model_trim = '" + trim + "' GROUP BY model_trim";
     std::vector<std::vector<QString>> vehicleDataDB = db->fetch_data_from_server(getVehicleData);
-    QVector<QString> vehicleData = QVector<QString>(vehicleDataDB[0].begin(), vehicleDataDB[0].end());
+    QVector<QString> vehicleData = QVector<QString>::fromStdVector(vehicleDataDB[0]);
         
         
         //Filling in the line edits using the query results
@@ -378,7 +378,8 @@ void VehicleLookUp::on_pushButton_2_clicked()
         std::vector<std::vector<QString>> extra_vehicle_data_db = db->fetch_data_from_server(get_extra_vehicle_data);
 
         //getting the first result of the query into a single vector of strings
-        QVector<QString> extra_vehicle_data = QVector<QString>(extra_vehicle_data_db[0].begin(), extra_vehicle_data_db[0].end());
+        // QVector<QString> extra_vehicle_data = QVector<QString>(extra_vehicle_data_db[0].begin(), extra_vehicle_data_db[0].end());
+        QVector<QString> extra_vehicle_data = QVector<QString>::fromStdVector(extra_vehicle_data_db[0]);
 
         //filling line edits with information from query results
         if (extra_vehicle_data[19] != ""){
